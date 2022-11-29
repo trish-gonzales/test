@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Send Feedback Message</title>
+
+    <link rel="stylesheet" href="/public/CSS/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 style="margin-left: 50px">Feedback</h1>
+        <h5 style="margin-left: 50px">Send a Message to us about your overall Experience</h5>
+    </div>
+    <form method="POST" action="/send_feedback">
+        <div class="msgcontainer">
+            {{ msg }}
+        </div>
+        <div class="formcontainer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Your name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" placeholder="Your email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <label>Experience</label>
+                </div>
+                <div class="col-xs-12 col-sm-12">
+                    <label class="radiobtn"><input type="radio" name="experience" value="Great" style="margin-right: 10px;">Great</label>
+                    <label class="radiobtn"><input type="radio" name="experience" value="Okay" style="margin-right: 10px;">Okay</label>
+                    <label class="radiobtn"><input type="radio" name="experience" value="Bad" style="margin-right: 10px;">Bad</label>
+                    <label class="radiobtn"><input type="radio" name="experience" value="Horrible" style="margin-right: 10px;">Horrible</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12" style="margin-bottom: 20px">
+                    <label for="store">Select your favorite store: </label>
+                    <select name="store" id="list_of_stores" style="margin-left: 10px;">
+                        <option value="zara">Zara</option>
+                        <option value="h&m">H&M</option>
+                        <option value="uniqlo">Uniqlo</option>
+                        <option value="jacknjones">Jack and Jones</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Your message..." style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="submitB">
+                <button type="submit">Send</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

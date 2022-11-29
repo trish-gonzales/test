@@ -1,0 +1,48 @@
+
+.carousel .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+.msgcontainer {
+  border-radius: 5px;
+  padding: 20px;
+  color: #45a049;
+  font-size: 20px;
+  font-family: Times;
+}
+.formcontainer {
+  border-radius: 5px;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.radiobtn{
+  margin: 10px 40px 20px 10px;
+  cursor: pointer;
+}
+
+button[type=submit] {
+  background-color: rgb(41, 151, 44);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: auto;
+  font-size: 15px;
+}
+
+button[type=submit]:hover {
+  background-color: #45a049;
+}

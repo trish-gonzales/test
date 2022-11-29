@@ -1,0 +1,41 @@
+{
+  "name": "cps731-phase2",
+  "version": "1.0.0",
+  "description": "Clothing is a basic need. However, inflation has caused the cost of living to increase– making affordable clothing difficult to find. Everyday consumers are drawn to big retailer shops and are unaware of the best deals available in the market. There is a need for an application that aggregates current clothing deals for consumers. Our team aims to solve this problem by developing an app that would provide an easy way to find all the available clothing deals online. Our app will serve as a collection of deals from various online clothing retailers.",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "bytes": "^3.1.2",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-flash": "0.0.2",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "json": "^11.0.0",
+    "method-override": "^3.0.0",
+    "mongo": "^0.1.0",
+    "mongodb": "^4.11.0",
+    "mongoose": "^6.7.2",
+    "nodemailer": "^6.8.0",
+    "nodemon": "^2.0.20",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "xoauth2": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/cps731-team9/cps731-phase2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/cps731-team9/cps731-phase2/issues"
+  },
+  "homepage": "https://gitlab.com/cps731-team9/cps731-phase2#readme"
+}
